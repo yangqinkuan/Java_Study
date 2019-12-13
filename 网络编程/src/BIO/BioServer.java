@@ -19,8 +19,9 @@ public class BioServer {
         try{  
             //通过构造函数创建ServerSocket  
             //如果端口合法且空闲，服务端就监听成功  
-            server = new ServerSocket(port);  
-            System.out.println("服务器已启动，端口号：" + port);  
+            server = new ServerSocket(port);
+
+            System.out.println("服务器已启动，端口号：" + port);
             //通过无线循环监听客户端连接  
             //如果没有客户端接入，将阻塞在accept操作上。  
             while(true){  
@@ -37,5 +38,5 @@ public class BioServer {
                 server = null;  
             }  
         }  
-    } 
+    }
 }

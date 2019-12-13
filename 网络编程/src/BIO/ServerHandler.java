@@ -43,12 +43,10 @@ public class ServerHandler implements Runnable {
 	                } catch (IOException e) {  
 	                    e.printStackTrace();  
 	                }  
-	                in = null;  
-	            }  
+	            }
 	            if(out != null){  
 	                out.close();  
-	                out = null;  
-	            }  
+	            }
 	            if(socket != null){  
 	                try {  
 	                    socket.close();  

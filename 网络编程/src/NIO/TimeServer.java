@@ -11,6 +11,6 @@ public class TimeServer {
 			}
 		}
 		MultiplexerTimeServer timerServer = new MultiplexerTimeServer(port);
-		new Thread(timerServer,"Server001").start();;
+		new Thread(timerServer,"Server001").start();
 	}
 }

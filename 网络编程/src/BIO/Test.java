@@ -14,9 +14,9 @@ public class Test {
 			}
 		}).start();
 		Thread.sleep(200);
-		new Thread(()-> {
+		/*new Thread(()-> {
             Client.send("nihao");
-        }).start();
+        }).start();*/
 
 	}
 }
