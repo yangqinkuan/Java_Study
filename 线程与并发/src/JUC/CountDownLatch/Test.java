@@ -12,8 +12,10 @@ import java.util.concurrent.CountDownLatch;
 public class Test {
     public static void main(String[] args) throws InterruptedException {
         CountDownLatch countDownLatch = new CountDownLatch(5);
+        countDownLatch.hashCode();
         countDownLatch.countDown();
         countDownLatch.await();
 
     }
+
 }
