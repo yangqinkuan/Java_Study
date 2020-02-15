@@ -29,6 +29,7 @@ public class TestFutrueTask {
         InsertCallable itask = new InsertCallable(12000);
         FutureTask<Boolean> UfutureTask = new FutureTask<Boolean>(utask);
         FutureTask<Boolean> IfutureTask = new FutureTask<Boolean>(itask);
+
         threadPool.submit(UfutureTask);
         threadPool.submit(IfutureTask);
         try {

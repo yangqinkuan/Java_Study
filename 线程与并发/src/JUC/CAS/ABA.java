@@ -58,7 +58,7 @@ public class ABA {
             public void run() {
                 int stamp = atomicStampedRef.getStamp();
                 try {
-                    TimeUnit.SECONDS.sleep(2);
+                    TimeUnit.SECONDS.sleep(3);
                 } catch (InterruptedException e) {
                 }
                 boolean c3 = atomicStampedRef.compareAndSet(100, 101, stamp, stamp + 1);
