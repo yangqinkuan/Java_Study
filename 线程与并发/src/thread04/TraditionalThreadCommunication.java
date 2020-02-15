@@ -23,7 +23,7 @@ public class TraditionalThreadCommunication {
 	class Business{
 		
 		private boolean bShouldSub = true;
-		//◊”∑Ω∑®
+		//Â≠êÊñπÊ≥ï
 		public synchronized void sub(){
 			while(!bShouldSub){
 				try {
@@ -39,7 +39,7 @@ public class TraditionalThreadCommunication {
 			bShouldSub = false;	
 			this.notify();
 		}
-		//∏∏∑Ω∑®
+		//Áà∂ÊñπÊ≥ï
 		public synchronized void main(){
 				while(bShouldSub){
 					try { 

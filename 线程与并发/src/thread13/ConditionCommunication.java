@@ -27,7 +27,7 @@ public class ConditionCommunication {
 		Lock lock = new ReentrantLock();
 		Condition condition = lock.newCondition();
 		private boolean bShouldSub = true;
-		//◊”∑Ω∑®
+		//Â≠êÊñπÊ≥ï
 		public void sub(){
 			lock.lock();
 			try{
@@ -50,7 +50,7 @@ public class ConditionCommunication {
 				lock.unlock();
 			}
 		}
-		//∏∏∑Ω∑®
+		//Áà∂ÊñπÊ≥ï
 		public void main(){
 			lock.lock();
 			try{

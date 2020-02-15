@@ -10,9 +10,9 @@ public class TimeClient {
 				// TODO: handle exception
 			}
 		}
-		for(int i=0;i<10000;i++){
+		for(int i=0;i<100;i++){
 			System.out.println(i);
-			MultiplexerTimeClient timerClient = new MultiplexerTimeClient("127.0.0.1",port);
+			MultiplexerTimeClient timerClient = new MultiplexerTimeClient("192.168.1.103",port);
 			
 			new Thread(timerClient).start();
 		}
